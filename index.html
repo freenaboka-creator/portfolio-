@@ -4,8 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FreeNab — Видеограф</title>
-  <!-- Подключаем киношные шрифты -->
+  <!-- Киношные шрифты -->
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Иконки -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     * {
       margin: 0;
@@ -76,15 +78,29 @@
       color: #fff;
       border-color: rgba(255, 255, 255, 0.2);
     }
-    .contacts a {
-      display: inline-block;
-      margin-top: 8px;
-      color: #64b5f6;
+    .social-links {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: #8899bb;
       text-decoration: none;
       font-family: 'Montserrat', sans-serif;
+      font-size: 1.15rem;
+      transition: color 0.3s ease;
     }
-    .contacts a:hover {
-      text-decoration: underline;
+    .social-links a:hover {
+      color: #ffffff;
+    }
+    .social-links i {
+      font-size: 1.4rem;
+      width: 24px;
+      text-align: center;
     }
     @media (min-width: 768px) {
       header h1 { font-size: 4.2rem; }
@@ -114,12 +130,15 @@
   <div class="section">
     <h2>Контакты</h2>
     <p>Готов обсудить новые проекты!</p>
-    <a href="https://t.me/freenab">Telegram</a><br>
-    <a href="https://instagram.com/nabokaone_love">Instagram</a>
+    <div class="social-links">
+      <a href="https://t.me/freenab" target="_blank" rel="noopener">
+        <i class="fab fa-telegram"></i> Telegram
+      </a>
+      <a href="https://instagram.com/nabokaone_love" target="_blank" rel="noopener">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+    </div>
   </div>
 
 </body>
 </html>
-</body>
-</html>
-
